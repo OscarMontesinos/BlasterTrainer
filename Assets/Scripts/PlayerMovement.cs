@@ -18,8 +18,11 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
     public float gravityMultiplier;
 
+    public bool jumpable = true;
+
     public GameObject bullet;
     public GameObject gancho;
+    public GameObject checkpoint;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -33,14 +36,19 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         movement = new Vector3(horizontalInput, 0, verticalInput);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && jumpable)
         {
+            jumpable = false;
             _rigidbody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
         }
         if (Input.GetMouseButton(0) && shootTimer <=0)
         {
             _rigidbody.AddForce(transform.forward * -shootRecoil, ForceMode.Impulse);
             shootTimer = shootTime;
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Die();
         }
     }
     // Update is called once per frame
@@ -61,6 +69,14 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, maxSpeed);
 
         
+    }
+
+    public void Die()
+    {
+        _rigidbody.velocity = new Vector3(0, 0, 0);
+        transform.position = checkpoint.transform.position;
+        checkpoint.GetComponent<CheckPoint>().StartCoroutine(checkpoint.GetComponent<CheckPoint>().Respawn());
+        gameObject.SetActive(false);
     }
 
 }

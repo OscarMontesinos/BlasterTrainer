@@ -9,6 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2291773987416867208}
+<<<<<<< HEAD
+  - component: {fileID: 2260549978285202410}
+=======
+>>>>>>> ceee2c38bc30cefd47eaa6f4544030c7c85c3024
   m_Layer: 0
   m_Name: CajaExplosiva
   m_TagString: Untagged
@@ -25,7 +29,11 @@ Transform:
   m_GameObject: {fileID: 1478822111262202674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 49.279, y: 0.73, z: -22.338}
+<<<<<<< HEAD
+  m_LocalScale: {x: 0.17542636, y: 0.17542636, z: 0.17542636}
+=======
   m_LocalScale: {x: 0.2591574, y: 0.2591574, z: 0.2591574}
+>>>>>>> ceee2c38bc30cefd47eaa6f4544030c7c85c3024
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1993643026013904521}
@@ -34,6 +42,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!65 &2260549978285202410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478822111262202674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8775047, y: 2.0124261, z: 1.9807242}
+  m_Center: {x: 0, y: -0.0015272669, z: 0.030633679}
+=======
+>>>>>>> ceee2c38bc30cefd47eaa6f4544030c7c85c3024
 --- !u!1 &4128180941434530786
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +301,10 @@ GameObject:
   - component: {fileID: 5443703902347646268}
   - component: {fileID: 2154171080999895262}
   - component: {fileID: 5451004308751625436}
+<<<<<<< HEAD
+=======
   - component: {fileID: 4008726375360117449}
+>>>>>>> ceee2c38bc30cefd47eaa6f4544030c7c85c3024
   m_Layer: 0
   m_Name: Caja
   m_TagString: Untagged
@@ -380,6 +407,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD
+=======
 --- !u!65 &4008726375360117449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -393,3 +422,4 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999996, z: 0.021346577}
   m_Center: {x: 0.00000023841858, y: -1.3099232e-19, z: 0.000018435527}
+>>>>>>> ceee2c38bc30cefd47eaa6f4544030c7c85c3024

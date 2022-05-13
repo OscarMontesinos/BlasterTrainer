@@ -38,7 +38,7 @@ public class Gancho : MonoBehaviour
         if (enganchado)
         {
             var dist = transform.position - robot.transform.position;
-            robot.GetComponent<PlayerMovement>()._rigidbody.AddForce( dist* robot.GetComponent<PlayerMovement>().hookTractionSpeed, ForceMode.Impulse);
+            robot.GetComponent<PlayerMovement>()._rigidbody.AddForce( dist* robot.GetComponent<PlayerMovement>().hookTractionSpeed, ForceMode.Force);
         }
     }
 
@@ -83,7 +83,7 @@ public class Gancho : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "object")
+        if (other.gameObject.tag == "object" && avanzando)
         {
             enganchado = true;
         }
