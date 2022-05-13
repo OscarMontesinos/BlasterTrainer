@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity
+- path: Assets/Scenes/LevelDesign.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
