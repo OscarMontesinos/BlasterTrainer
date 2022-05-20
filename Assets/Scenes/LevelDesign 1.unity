@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 89059136}
   m_Layer: 0
   m_Name: Colliders (1)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 119856541}
   m_Layer: 0
   m_Name: Colliders (5)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 209783526}
   m_Layer: 0
   m_Name: Colliders (7)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 214056920}
   m_Layer: 0
   m_Name: Colliders (11)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 282134501}
   m_Layer: 0
   m_Name: Colliders (8)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 295742347}
   m_Layer: 0
   m_Name: Colliders (8)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 315114367}
   m_Layer: 0
   m_Name: Colliders (12)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: 525483141}
   m_Layer: 0
   m_Name: Colliders (4)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -759,8 +759,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821181983}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 0.08405487, y: -0.20595336, z: -0.099752575}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalPosition: {x: 73.22, y: 0, z: -4.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1202619100}
@@ -776,8 +776,8 @@ Transform:
   - {fileID: 1634844617}
   - {fileID: 1899702207}
   - {fileID: 315114366}
-  m_Father: {fileID: 312592162}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &837081659
 GameObject:
@@ -816,7 +816,7 @@ Transform:
   - {fileID: 1370530649}
   - {fileID: 8140765}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947901584
 GameObject:
@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 947901586}
   m_Layer: 0
   m_Name: Colliders (7)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -944,7 +944,7 @@ GameObject:
   - component: {fileID: 1070193873}
   m_Layer: 0
   m_Name: Colliders (10)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 1079146305}
   m_Layer: 0
   m_Name: Colliders (9)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 1131980015}
   m_Layer: 0
   m_Name: Colliders
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 1202619101}
   m_Layer: 0
   m_Name: Colliders
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 1234573648}
   m_Layer: 0
   m_Name: Colliders (1)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1312,14 +1312,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377737229}
-  m_LocalRotation: {x: 0.116408154, y: -0.0031799441, z: 0.00037383282, w: 0.99319637}
-  m_LocalPosition: {x: 0, y: 0.0296, z: -0.0521}
-  m_LocalScale: {x: 0.010000004, y: 0.009999998, z: 0.0100000035}
+  m_LocalRotation: {x: 0.44520167, y: -0.0018586472, z: 0.0008562368, w: 0.895428}
+  m_LocalPosition: {x: 5.0726185, y: 39.53538, z: -20.498331}
+  m_LocalScale: {x: 1.0000002, y: 0.99999976, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1697366204}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 13.37, y: -0.367, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.746, y: 360, z: 0}
 --- !u!1 &1411167144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,7 +1332,7 @@ GameObject:
   - component: {fileID: 1411167146}
   m_Layer: 0
   m_Name: Colliders (6)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1365,9 +1365,9 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 14.644533, z: 5.7320213}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1415455729 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1027917001548823486, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
+--- !u!54 &1415455724 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 705196437010809619, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
   m_PrefabInstance: {fileID: 1469607014}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1469607014
@@ -1377,18 +1377,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1583933567, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.2867
-      objectReference: {fileID: 0}
-    - target: {fileID: 1583933567, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00869
-      objectReference: {fileID: 0}
-    - target: {fileID: 1583933567, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 362598858239680772, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
       propertyPath: m_Name
       value: RobotV.0.1
@@ -1398,20 +1386,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1377737231}
     - target: {fileID: 705196437010809618, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
-      propertyPath: jumpSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 705196437010809619, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 1415455724}
     - target: {fileID: 1027917001548823486, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1027917001548823486, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 59.7
+      value: -21.04
       objectReference: {fileID: 0}
     - target: {fileID: 1027917001548823486, guid: e74ed03cb2f1c5d498ef2489be68d7d7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1468,7 +1452,7 @@ GameObject:
   - component: {fileID: 1506783407}
   m_Layer: 0
   m_Name: Colliders (3)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1513,7 +1497,7 @@ GameObject:
   - component: {fileID: 1554553279}
   m_Layer: 0
   m_Name: Colliders (9)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1601,10 +1585,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3726335715825260571, guid: e8f11dbc3b59cae4c9903a8558966103, type: 3}
-      propertyPath: m_TagString
-      value: object
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f11dbc3b59cae4c9903a8558966103, type: 3}
 --- !u!1 &1634844616
@@ -1619,7 +1599,7 @@ GameObject:
   - component: {fileID: 1634844618}
   m_Layer: 0
   m_Name: Colliders (10)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1675,9 +1655,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673529435}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.080745235, y: -0.20595336, z: 0.08824745}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1131980016}
@@ -1693,8 +1673,8 @@ Transform:
   - {fileID: 1070193872}
   - {fileID: 214056919}
   - {fileID: 1969689694}
-  m_Father: {fileID: 312592162}
-  m_RootOrder: 7
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696762744
 GameObject:
@@ -1708,7 +1688,7 @@ GameObject:
   - component: {fileID: 1696762746}
   m_Layer: 0
   m_Name: Colliders (5)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1741,53 +1721,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 14.644533, z: 5.7320213}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1697366203
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1697366204}
-  - component: {fileID: 1697366205}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1697366204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697366203}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1377737232}
-  m_Father: {fileID: 1415455729}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1697366205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697366203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca9890dd8c941946a433798e40c9927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedH: 5
-  speedV: 2
 --- !u!1 &1761593807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,7 +1733,7 @@ GameObject:
   - component: {fileID: 1761593809}
   m_Layer: 0
   m_Name: Colliders (2)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1845,7 +1778,7 @@ GameObject:
   - component: {fileID: 1899702208}
   m_Layer: 0
   m_Name: Colliders (11)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1890,7 +1823,7 @@ GameObject:
   - component: {fileID: 1900714168}
   m_Layer: 0
   m_Name: Colliders (4)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1935,7 +1868,7 @@ GameObject:
   - component: {fileID: 1950794631}
   m_Layer: 0
   m_Name: Colliders (2)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1980,7 +1913,7 @@ GameObject:
   - component: {fileID: 1964538451}
   m_Layer: 0
   m_Name: Colliders (3)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2025,7 +1958,7 @@ GameObject:
   - component: {fileID: 1969689695}
   m_Layer: 0
   m_Name: Colliders (12)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2139,7 +2072,7 @@ GameObject:
   - component: {fileID: 2103414817}
   m_Layer: 0
   m_Name: Colliders (6)
-  m_TagString: object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2286,7 +2219,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 111697148756739687, guid: 7f76b2d54fa689b45b9f637f7b1b0d85, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 111697148756739687, guid: 7f76b2d54fa689b45b9f637f7b1b0d85, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2347,7 +2280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4326153635846769579, guid: c1408be7fe02f504abb8a5967f3f341f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4326153635846769579, guid: c1408be7fe02f504abb8a5967f3f341f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2404,7 +2337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3070445819117283535, guid: 0f19a852e7aef6545973223e9989c089, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3070445819117283535, guid: 0f19a852e7aef6545973223e9989c089, type: 3}
       propertyPath: m_LocalPosition.x
