@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BalaCañon : MonoBehaviour
 {
-    Transform startPosition;
+    Vector3 startPosition;
     public float speed;
     bool start;
     float timePassed;
@@ -12,7 +12,7 @@ public class BalaCañon : MonoBehaviour
 
     private void Awake()
     {
-        startPosition = transform;
+        startPosition = transform.position;
     }
     private void Update()
     {
@@ -21,7 +21,7 @@ public class BalaCañon : MonoBehaviour
             timePassed += Time.deltaTime;
             if(timePassed >= loopTime)
             {
-                transform.position = startPosition.position;
+                transform.position = startPosition;
                 timePassed = 0;
             }
             transform.Translate(Vector3.right * -speed * Time.deltaTime);
