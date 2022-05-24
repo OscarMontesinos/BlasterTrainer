@@ -33,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject gancho;
     public GameObject checkpoint;
     public GameObject explosion;
+
+    public Animator animatorR;
+    public Animator animatorL;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -141,11 +144,14 @@ public class PlayerMovement : MonoBehaviour
             {
                 GameObject bala = (GameObject)Instantiate(bullet, canon1.position, transform.rotation);
                 bala.transform.LookAt(hit.point);
+                animatorL.SetTrigger("Disparar");
             }
             else
             {
                 GameObject bala = (GameObject)Instantiate(bullet, canon2.position, transform.rotation);
                 bala.transform.LookAt(hit.point);
+
+                animatorR.SetTrigger("Disparar");
             }
         }
     }
