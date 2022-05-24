@@ -47,7 +47,15 @@ public class Gancho : MonoBehaviour
     public virtual IEnumerator Avance()
     {
         path = 0;
-        transform.parent = null;
+        transform.parent = null; 
+        Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0f);
+        Ray ray = Camera.main.ViewportPointToRay(rayOrigin);
+        transform.rotation = robot.transform.rotation;
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, range))
+        {
+            transform.LookAt(hit.point);
+        }
         while (range >= path && avanzando && !enganchado)
         {
 
