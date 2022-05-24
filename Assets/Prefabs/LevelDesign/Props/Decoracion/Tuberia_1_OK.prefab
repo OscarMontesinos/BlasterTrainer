@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6209808539920442731}
   - component: {fileID: 3345120893230196774}
   - component: {fileID: 1975976287573740705}
+  - component: {fileID: 4856479891185384827}
   m_Layer: 0
   m_Name: Tuberias
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4856479891185384827
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793307662852262204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3574792750405608139, guid: 1b53c82decdf0d64283aafe22dbb46ec, type: 3}
 --- !u!1 &1667482902139161575
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 856722327854463707}
   - component: {fileID: 4295016532240069084}
   - component: {fileID: 875742991675447364}
+  - component: {fileID: 7338746446408659321}
   m_Layer: 0
   m_Name: Encajes
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7338746446408659321
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667482902139161575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2488363846016784560, guid: 1b53c82decdf0d64283aafe22dbb46ec, type: 3}
 --- !u!1 &5193372523269769280
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +207,7 @@ GameObject:
   - component: {fileID: 4852980887974089466}
   m_Layer: 0
   m_Name: Tuberia_1_OK
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 5193372523269769280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.39090365, y: 0.159, z: -0.22863111}
-  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 856722327854463707}

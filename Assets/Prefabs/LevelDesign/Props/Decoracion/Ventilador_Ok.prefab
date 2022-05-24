@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7216282738631525462}
   - component: {fileID: 8757322704835070458}
   - component: {fileID: 7836373760438761673}
+  - component: {fileID: 6420831384451395239}
   m_Layer: 0
   m_Name: Rejilla
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6420831384451395239
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019837707048394751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4314097134291480960, guid: 47df1b075c6f6e7448ce7eee6ec8dab7, type: 3}
 --- !u!1 &2165880063152050611
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 6879635662262610411}
   - component: {fileID: 245040003911331889}
   - component: {fileID: 6067564110856889600}
+  - component: {fileID: 474254638182242396}
   m_Layer: 0
   m_Name: Aspas_2
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &474254638182242396
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2165880063152050611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8663463394064716755, guid: 47df1b075c6f6e7448ce7eee6ec8dab7, type: 3}
 --- !u!1 &4190415617922867595
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +207,7 @@ GameObject:
   - component: {fileID: 8817816935173753875}
   - component: {fileID: 6421235210787146548}
   - component: {fileID: 7378084065160991657}
+  - component: {fileID: 3481170707261073059}
   m_Layer: 0
   m_Name: Aspas_1
   m_TagString: Untagged
@@ -249,6 +280,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3481170707261073059
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190415617922867595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4522944747671251304, guid: 47df1b075c6f6e7448ce7eee6ec8dab7, type: 3}
 --- !u!1 &4244258365399557108
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +305,7 @@ GameObject:
   - component: {fileID: 1285843375713594995}
   - component: {fileID: 7026940682221777332}
   - component: {fileID: 1262776561002446417}
+  - component: {fileID: 3001852950067093455}
   m_Layer: 0
   m_Name: VentiladorRejilla
   m_TagString: Untagged
@@ -332,6 +378,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3001852950067093455
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4244258365399557108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8132848078585856163, guid: 47df1b075c6f6e7448ce7eee6ec8dab7, type: 3}
 --- !u!1 &4456310654738098968
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +403,7 @@ GameObject:
   - component: {fileID: 3935071037745770914}
   m_Layer: 0
   m_Name: Ventilador_Ok
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,6 +439,7 @@ GameObject:
   - component: {fileID: 5298802347095482420}
   - component: {fileID: 5571371802792680017}
   - component: {fileID: 7122937407886058774}
+  - component: {fileID: 8061895051758702433}
   m_Layer: 0
   m_Name: Caja
   m_TagString: Untagged
@@ -451,3 +512,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8061895051758702433
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683385803229056544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7269173089721441667, guid: 47df1b075c6f6e7448ce7eee6ec8dab7, type: 3}
