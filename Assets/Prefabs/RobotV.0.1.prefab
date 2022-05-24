@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1377737232}
   - component: {fileID: 1377737231}
   - component: {fileID: 1377737230}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1583933567}
   - component: {fileID: 1583933568}
   - component: {fileID: 1583933569}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697366204}
   - component: {fileID: 1697366205}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 705196437010809619}
   - component: {fileID: 705196437010809627}
   - component: {fileID: 705196437010809618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RobotV.0.1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -334,8 +334,11 @@ MonoBehaviour:
   shootTime: 0.35
   maxSpeed: 15
   gravityMultiplier: 5
+  maskProjectile:
+    serializedVersion: 2
+    m_Bits: 0
   jumpable: 1
-  bullet: {fileID: 0}
+  bullet: {fileID: 6776607146321653992, guid: 89e1d1c1286b0b345987b24c398c93a3, type: 3}
   gancho: {fileID: 0}
   checkpoint: {fileID: 0}
 --- !u!1 &1002800637314134129
@@ -349,7 +352,7 @@ GameObject:
   - component: {fileID: 2416962732087195601}
   - component: {fileID: 5213410119432249702}
   - component: {fileID: 6768014140030045024}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Antebrazo.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +436,7 @@ GameObject:
   - component: {fileID: 4662389110678504404}
   - component: {fileID: 5150266350545623591}
   - component: {fileID: 4405248092243064624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hombro.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +524,7 @@ GameObject:
   - component: {fileID: 5386292944295488054}
   - component: {fileID: 35965588}
   - component: {fileID: 35965584}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +652,7 @@ GameObject:
   - component: {fileID: 2957635830770589677}
   - component: {fileID: 2843028615303648067}
   - component: {fileID: 2005489649748809416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Abrazadera.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +738,7 @@ GameObject:
   - component: {fileID: 7798029603080723990}
   - component: {fileID: 2849862286768336969}
   - component: {fileID: 8786032862952814558}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Ca\xF1on.002"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +823,7 @@ GameObject:
   - component: {fileID: 7317305578185347535}
   - component: {fileID: 8112845704365833534}
   - component: {fileID: 6781560029868223991}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gancho.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +906,7 @@ GameObject:
   - component: {fileID: 5263720387354545968}
   - component: {fileID: 8225406667255873873}
   - component: {fileID: 3371447981563697473}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Casco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +989,7 @@ GameObject:
   - component: {fileID: 2910196375894736916}
   - component: {fileID: 4761905304157362299}
   - component: {fileID: 9009999672214482258}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Brazo.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1072,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5481240218518973161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,7 +1106,7 @@ GameObject:
   - component: {fileID: 5289469117678186032}
   - component: {fileID: 6691645733104471075}
   - component: {fileID: 1936944109262409209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Motor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1190,7 +1193,7 @@ GameObject:
   - component: {fileID: 3094424490312819987}
   - component: {fileID: 4659801426146386597}
   - component: {fileID: 3082553379405057609}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Antebrazo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1277,7 @@ GameObject:
   - component: {fileID: 1099527218544957704}
   - component: {fileID: 6949764572962310992}
   - component: {fileID: 1424461670610086426}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Abrazadera.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1360,7 +1363,7 @@ GameObject:
   - component: {fileID: 2346984241967750050}
   - component: {fileID: 5006512456158809786}
   - component: {fileID: 2974321968063729997}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Brazo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,7 +1448,7 @@ GameObject:
   - component: {fileID: 354286510687329456}
   - component: {fileID: 4130561427425092986}
   - component: {fileID: 945682295486558863}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gancho.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1531,7 @@ GameObject:
   - component: {fileID: 8975058733632275565}
   - component: {fileID: 1515708536973143286}
   - component: {fileID: 4527335932034756243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hombro.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1613,7 +1616,7 @@ GameObject:
   - component: {fileID: 9051928819984090741}
   - component: {fileID: 1869395088391436277}
   - component: {fileID: 733575046937118032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Ca\xF1on.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

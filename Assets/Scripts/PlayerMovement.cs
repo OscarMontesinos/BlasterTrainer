@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody _rigidbody;
     public Camera cam;
+    public GameObject camHandler;
     Vector3 movement;
     float horizontalInput = 0;
     float verticalInput = 0;
@@ -21,14 +22,16 @@ public class PlayerMovement : MonoBehaviour
     float shootTimer;
     public float maxSpeed;
     public float gravityMultiplier;
-
+    public LayerMask maskProjectile;
     public bool jumpable = true;
 
     public GameObject bullet;
     public GameObject gancho;
     public GameObject checkpoint;
+    public GameObject explosion;
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         speedB = speedTurn;
         _rigidbody = GetComponent<Rigidbody>();
     }
@@ -48,6 +51,14 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetMouseButton(0) && shootTimer <= 0)
         {
+            Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0f);
+            Ray ray = Camera.main.ViewportPointToRay(rayOrigin);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit,1000))
+            {
+                GameObject bala = (GameObject)Instantiate(bullet, transform.position, transform.rotation);
+                bala.transform.LookAt(hit.point);
+            }
             _rigidbody.AddForce(cam.transform.forward * -shootRecoil, ForceMode.Impulse);
             shootTimer = shootTime;
         }
@@ -113,9 +124,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
+        Instantiate(explosion, transform.position, transform.rotation);
+        cam.transform.parent = null;
         _rigidbody.velocity = new Vector3(0, 0, 0);
         transform.position = checkpoint.transform.position;
         checkpoint.GetComponent<CheckPoint>().StartCoroutine(checkpoint.GetComponent<CheckPoint>().Respawn());
+        cam.transform.parent = null;
         gameObject.SetActive(false);
     }
 

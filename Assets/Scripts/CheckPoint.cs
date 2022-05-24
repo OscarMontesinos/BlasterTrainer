@@ -10,7 +10,7 @@ public class CheckPoint : MonoBehaviour
     {
         player = FindObjectOfType<PlayerMovement>().gameObject;
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
@@ -21,5 +21,7 @@ public class CheckPoint : MonoBehaviour
     {
         yield return new WaitForSeconds(respawnTime);
         player.SetActive(true);
+        player.GetComponent<PlayerMovement>().cam.transform.parent = player.GetComponent<PlayerMovement>().camHandler.transform;
+        player.GetComponent<PlayerMovement>().cam.transform.localPosition = new Vector3(0.0002f, 0.0502f, -0.0788f);
     }
 }
