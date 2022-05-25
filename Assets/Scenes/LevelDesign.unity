@@ -2562,7 +2562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLoop: 2.5
-  speed: 6
+  speed: 3
   inverse: 0
 --- !u!4 &832970934 stripped
 Transform:
@@ -2913,6 +2913,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5542410561011613028, guid: dba62ca699c822f4691c1a3db76052ae, type: 3}
   m_PrefabInstance: {fileID: 1062322867}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &917110136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917110138}
+  - component: {fileID: 917110137}
+  - component: {fileID: 917110139}
+  m_Layer: 0
+  m_Name: GameObject (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &917110137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917110136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.63, y: 6.66, z: 8.41}
+  m_Center: {x: 0, y: -0.16, z: 0}
+--- !u!4 &917110138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917110136}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -81.26, y: 9.91, z: -2.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917110139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917110136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b284f3cc433b4547962a0bb2f7839d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &918528932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6107343840102626720, guid: 8cfb6f0a61879ef49ac008cf7fd29abd, type: 3}
@@ -2931,7 +2989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLoop: 2.5
-  speed: 6
+  speed: 3
   inverse: 0
 --- !u!4 &926224435 stripped
 Transform:
@@ -4108,7 +4166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLoop: 2.5
-  speed: 6
+  speed: 3
   inverse: 1
 --- !u!1001 &1253496347
 PrefabInstance:
@@ -5061,7 +5119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLoop: 2.5
-  speed: 6
+  speed: 3
   inverse: 1
 --- !u!4 &1544205538 stripped
 Transform:
@@ -6061,7 +6119,7 @@ RectTransform:
   m_GameObject: {fileID: 2006052262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7745297, y: 3.7745297, z: 3.7745297}
+  m_LocalScale: {x: 1.6060246, y: 1.6060246, z: 1.6060246}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904100163}
@@ -10120,15 +10178,15 @@ MonoBehaviour:
   _rigidbody: {fileID: 9053673197034749936}
   cam: {fileID: 234362797}
   camHandler: {fileID: 364559087}
-  speed: 12
+  speed: 50
   speedTurn: 500
   speedTurnMultiplier: 45
   speedTurnMax: 500
-  jumpSpeed: 45
+  jumpSpeed: 15
   hookTractionSpeed: 1
   shootRecoil: 6.5
   shootTime: 0.35
-  maxSpeed: 17
+  maxSpeed: 60
   gravityMultiplier: 5
   maskProjectile:
     serializedVersion: 2
