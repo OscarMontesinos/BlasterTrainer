@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravityMultiplier;
     public LayerMask maskProjectile;
     public bool jumpable = true;
+    float mass;
 
     public Transform canon1;
     public Transform canon2;
@@ -33,17 +34,33 @@ public class PlayerMovement : MonoBehaviour
     public GameObject gancho;
     public GameObject checkpoint;
     public GameObject explosion;
+    public GameObject camGo;
+
+    public LayerMask apuntable;
 
     public Animator animatorR;
     public Animator animatorL;
     void Start()
     {
+        mass = _rigidbody.mass;
         Cursor.lockState = CursorLockMode.Locked;
         speedB = speedTurn;
         _rigidbody = GetComponent<Rigidbody>();
-    }
+        speed *= mass;
+        jumpSpeed *= mass;
+        hookTractionSpeed *= mass;
+        shootRecoil *= mass;
+        speedTurn *= mass;
+        speedTurnMultiplier *= mass;
+        speedTurnMax *= mass;
+}
     private void Update()
     {
+        if (jumpable)
+        {
+            transform.rotation = camGo.transform.rotation;
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+        }
         if (shootTimer > 0)
         {
             shootTimer -= Time.deltaTime;
@@ -62,39 +79,15 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody.AddForce(cam.transform.forward * -shootRecoil, ForceMode.Impulse);
             shootTimer = shootTime;
         }
-        if (Input.GetKey(KeyCode.W) )
+        if (Input.GetKey(KeyCode.W) && !FindObjectOfType<Gancho>().enganchado)
         {
             _rigidbody.AddForce(transform.forward * speed, ForceMode.Force);
         }
-        if (Input.GetKey(KeyCode.S) )
+        if (Input.GetKey(KeyCode.S) && !FindObjectOfType<Gancho>().enganchado)
         {
             _rigidbody.AddForce(transform.forward * -speed / 2, ForceMode.Force);
         }
-        if (Input.GetKey(KeyCode.D) && jumpable)
-        {
-            _rigidbody.AddTorque(transform.up * speedTurn * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A) && jumpable)
-        {
-            _rigidbody.AddTorque(transform.up * -speedTurn * Time.deltaTime);
-            speedTurn += speedTurnMultiplier * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.A) && jumpable || Input.GetKey(KeyCode.D) && jumpable)
-        {
-            speedTurn += speedTurnMultiplier * Time.deltaTime;
-            if (speedTurn > speedTurnMax)
-            {
-                speedTurn = speedTurnMax;
-            }
-        }
-        else
-        {
-            speedTurn -= speedTurnMultiplier*4 * Time.deltaTime;
-            if (speedTurn < speedB)
-            {
-                speedTurn = speedB;
-            }
-        }
+
 
 
         if (Input.GetKeyDown(KeyCode.K))
@@ -116,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
         transform.LookAt(wantedPos, Vector3.down);
 
         _rigidbody.AddForce(movement.normalized * Time.deltaTime * speed, ForceMode.Force);*/
-        _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, maxSpeed);
+        //_rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, maxSpeed);
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
 
 
@@ -125,11 +118,9 @@ public class PlayerMovement : MonoBehaviour
     public void Die()
     {
         Instantiate(explosion, transform.position, transform.rotation);
-        cam.transform.parent = null;
         _rigidbody.velocity = new Vector3(0, 0, 0);
         transform.position = checkpoint.transform.position;
         checkpoint.GetComponent<CheckPoint>().StartCoroutine(checkpoint.GetComponent<CheckPoint>().Respawn());
-        cam.transform.parent = null;
         gameObject.SetActive(false);
     }
     void Shoot()
@@ -137,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0f);
         Ray ray = Camera.main.ViewportPointToRay(rayOrigin);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 1000))
+        if (Physics.Raycast(ray, out hit, 1000, apuntable))
         {
             shoots++;
             if(shoots % 2 != 0)
@@ -154,6 +145,13 @@ public class PlayerMovement : MonoBehaviour
                 animatorR.SetTrigger("Disparar");
             }
         }
+    }
+    public void GanchoSalto()
+    {
+        transform.rotation = camGo.transform.rotation;
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+        _rigidbody.AddForce(transform.forward * jumpSpeed, ForceMode.Impulse);
+        _rigidbody.AddForce(transform.up * jumpSpeed, ForceMode.Impulse);
     }
 
 }

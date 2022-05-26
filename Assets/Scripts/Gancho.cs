@@ -6,7 +6,7 @@ public class Gancho : MonoBehaviour
 {
     bool gancheable = true;
     bool avanzando;
-    bool enganchado;
+    public bool enganchado;
     public float speed = 0;
     public float range = 0;
     float path = 0;
@@ -35,10 +35,22 @@ public class Gancho : MonoBehaviour
                 StartCoroutine(Volver());
             }
         }
+       
+        if(Input.GetKeyDown(KeyCode.Space) && enganchado)
+        {
+            avanzando = false;
+            enganchado = false;
+            StartCoroutine(Volver());
+            robot.GetComponent<PlayerMovement>().GanchoSalto();
+        }
+    }
+    private void FixedUpdate()
+    {
         if (enganchado)
         {
+            robot.GetComponent<Rigidbody>().useGravity = false;
             var dist = transform.position - robot.transform.position;
-            robot.GetComponent<PlayerMovement>()._rigidbody.AddForce( dist* robot.GetComponent<PlayerMovement>().hookTractionSpeed, ForceMode.Force);
+            robot.GetComponent<PlayerMovement>()._rigidbody.AddForce(dist.normalized * robot.GetComponent<PlayerMovement>().hookTractionSpeed, ForceMode.Force);
         }
     }
 
@@ -73,6 +85,8 @@ public class Gancho : MonoBehaviour
     }
     public virtual IEnumerator Volver()
     {
+        transform.parent = null;
+        robot.GetComponent<Rigidbody>().useGravity = true;
         var dist = point.transform.position - transform.position;
         while (dist.magnitude > 0.5)
         {
@@ -94,6 +108,7 @@ public class Gancho : MonoBehaviour
         if (other.gameObject.tag == "object" && avanzando)
         {
             enganchado = true;
+            transform.parent = other.gameObject.transform;
         }
     }
 }
