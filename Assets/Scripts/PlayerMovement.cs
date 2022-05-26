@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody _rigidbody;
     public Camera cam;
-    public GameObject camHandler;
+    public CameraPlayer camHandler;
     Vector3 movement;
     float horizontalInput = 0;
     float verticalInput = 0;
@@ -40,8 +40,11 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animatorR;
     public Animator animatorL;
+    public Animator animatorWheel;
     void Start()
     {
+        animatorWheel = GetComponent<Animator>();
+        camHandler = FindObjectOfType<CameraPlayer>();
         mass = _rigidbody.mass;
         Cursor.lockState = CursorLockMode.Locked;
         speedB = speedTurn;
@@ -81,7 +84,13 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.W) && !FindObjectOfType<Gancho>().enganchado)
         {
+            animatorWheel.SetBool("Running", true);
             _rigidbody.AddForce(transform.forward * speed, ForceMode.Force);
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+
+            animatorWheel.SetBool("Running", false);
         }
         if (Input.GetKey(KeyCode.S) && !FindObjectOfType<Gancho>().enganchado)
         {
@@ -117,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
+        camHandler.seguir = false;
         Instantiate(explosion, transform.position, transform.rotation);
         _rigidbody.velocity = new Vector3(0, 0, 0);
         transform.position = checkpoint.transform.position;

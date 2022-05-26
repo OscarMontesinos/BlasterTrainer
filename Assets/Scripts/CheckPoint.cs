@@ -21,5 +21,6 @@ public class CheckPoint : MonoBehaviour
     {
         yield return new WaitForSeconds(respawnTime);
         player.SetActive(true);
+        FindObjectOfType<CameraPlayer>().seguir = true;
     }
 }

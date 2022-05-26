@@ -9,11 +9,15 @@ public class CameraPlayer : MonoBehaviour
     public GameObject robot;
     float yaw;
     float pitch;
+    public bool seguir = true;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = robot.transform.position;
+        if (seguir)
+        {
+            transform.position = robot.transform.position;
+        }
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
 

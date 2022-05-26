@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4856479891185384827}
   m_Layer: 0
   m_Name: Tuberias
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7338746446408659321}
   m_Layer: 0
   m_Name: Encajes
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
