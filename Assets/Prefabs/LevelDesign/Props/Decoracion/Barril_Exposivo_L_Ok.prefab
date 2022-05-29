@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1876176547}
   - component: {fileID: 4720659420217526691}
   - component: {fileID: 1765808781923952445}
+  - component: {fileID: 2496338799713773165}
   m_Layer: 0
   m_Name: Barril_Exposivo_L_Ok
   m_TagString: object
@@ -141,5 +142,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2496338799713773165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4479159239382361501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb6fac0ceb4711449e08bc85b306906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

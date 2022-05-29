@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class MaquinaPuños : MonoBehaviour
 {
-    public float timeLoop;
+     float timeLoop;
+    public float maxTime;
+    public float minTime;
     public float speed;
-    float timeLoopM;
     public bool inverse;
     bool go = true;
     float target2 = -0.1132603f;
     float target1 = -0.3685f;
     GameObject puño;
+    bool ready = true;
     private void Awake()
     {
-
-        timeLoopM = timeLoop;
+        timeLoop = Random.Range(minTime, maxTime);
         puño = transform.GetChild(0).gameObject;
         if (inverse)
         {
@@ -28,8 +29,9 @@ public class MaquinaPuños : MonoBehaviour
     void Update()
     {
         timeLoop -= Time.deltaTime;
-        if(timeLoop <= 0)
+        if(timeLoop <= 0 && ready)
         {
+            ready = false;
             Accion();
         }
     }
@@ -57,7 +59,7 @@ public class MaquinaPuños : MonoBehaviour
                 puño.transform.localPosition = new Vector3(puño.transform.localPosition.x , puño.transform.localPosition.y, puño.transform.localPosition.z - speed * Time.deltaTime);
                 yield return null;
             }
-            timeLoop = timeLoopM;
+            timeLoop = Random.Range(minTime, maxTime);
         }
         else
         {
@@ -66,7 +68,8 @@ public class MaquinaPuños : MonoBehaviour
                 puño.transform.localPosition = new Vector3(puño.transform.localPosition.x, puño.transform.localPosition.y, puño.transform.localPosition.z + speed * Time.deltaTime);
                 yield return null;
             }
-            timeLoop = timeLoopM;
+            timeLoop = Random.Range(minTime, maxTime);
         }
+        ready = true;
     }
 }

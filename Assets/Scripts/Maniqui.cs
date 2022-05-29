@@ -18,8 +18,9 @@ public class Maniqui : MonoBehaviour
                 progress++;
 
                 Destroy(parte1);
-                /* parte1.transform.parent = null;
-               var dirForce = transform.position - collision.transform.position;
+                /*parte1.transform.parent = null;
+                parte1.AddComponent(Rigidbody);
+               var dirForce = transform.position - other.transform.position;
                parte1.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                parte1.GetComponent<Rigidbody>().useGravity = true;
                parte1.GetComponent<Rigidbody>().AddForce(dirForce * force);*/
@@ -35,6 +36,8 @@ public class Maniqui : MonoBehaviour
                 Destroy(gameObject);
                 
             }
+            other.transform.GetChild(0).parent = null;
+            Destroy(other.gameObject);
         }
     }
 }

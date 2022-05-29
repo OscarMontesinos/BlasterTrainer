@@ -59,6 +59,10 @@ public class PlayerMovement : MonoBehaviour
 }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Die();
+        }
         if (jumpable)
         {
             transform.rotation = camGo.transform.rotation;
@@ -85,7 +89,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && !FindObjectOfType<Gancho>().enganchado)
         {
             animatorWheel.SetBool("Running", true);
-            _rigidbody.AddForce(transform.forward * speed, ForceMode.Force);
+            if (jumpable)
+            {
+                _rigidbody.AddForce(transform.forward * speed, ForceMode.Force);
+            }
+            else
+            {
+                _rigidbody.AddForce(transform.forward * speed / 3, ForceMode.Force);
+            }
         }
         if (Input.GetKeyUp(KeyCode.W))
         {
@@ -94,7 +105,14 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S) && !FindObjectOfType<Gancho>().enganchado)
         {
-            _rigidbody.AddForce(transform.forward * -speed / 2, ForceMode.Force);
+            if (jumpable)
+            {
+                _rigidbody.AddForce(transform.forward * -speed / 2, ForceMode.Force);
+            }
+            else
+            {
+                _rigidbody.AddForce(transform.forward * -speed / 5, ForceMode.Force);
+            }
         }
 
 

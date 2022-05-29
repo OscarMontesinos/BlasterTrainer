@@ -9,8 +9,12 @@ public class CajaExplosiva : MonoBehaviour
     {
         if(other.gameObject.tag == "Bullet")
         {
-            Instantiate(explosion, transform.position, transform.rotation);
-            Destroy(gameObject);
+            Explode();
         }
+    }
+    public void Explode()
+    {
+        Instantiate(explosion, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
