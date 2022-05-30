@@ -42,12 +42,12 @@ public class RotadorRandom : MonoBehaviour
         {
             if (positivo)
             {
-                speed -= 10;
+                speed -= 5;
             }
             else
             {
 
-                speed += 10;
+                speed += 5;
             }
             yield return null;
         }
