@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 33340775}
   - component: {fileID: 33340774}
   - component: {fileID: 33340773}
-  m_Layer: 0
+  - component: {fileID: 33340776}
+  m_Layer: 3
   m_Name: maniquiBo (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,6 +82,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &33340776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33340771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &89059134
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89059135}
   - component: {fileID: 89059136}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (1)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -136,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119856540}
   - component: {fileID: 119856541}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (5)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -183,7 +196,7 @@ GameObject:
   - component: {fileID: 189686862}
   - component: {fileID: 189686861}
   - component: {fileID: 189686860}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209783525}
   - component: {fileID: 209783526}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (7)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -422,7 +435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214056919}
   - component: {fileID: 214056920}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (11)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -469,7 +482,7 @@ GameObject:
   - component: {fileID: 240704236}
   - component: {fileID: 240704235}
   - component: {fileID: 240704234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282134500}
   - component: {fileID: 282134501}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (8)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -610,7 +623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 295742346}
   - component: {fileID: 295742347}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (8)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -655,7 +668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315114366}
   - component: {fileID: 315114367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (12)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -702,7 +715,8 @@ GameObject:
   - component: {fileID: 327053703}
   - component: {fileID: 327053702}
   - component: {fileID: 327053701}
-  m_Layer: 0
+  - component: {fileID: 327053704}
+  m_Layer: 3
   m_Name: maniquiBo (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -771,6 +785,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &327053704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327053699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &390421931
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +809,7 @@ GameObject:
   - component: {fileID: 390421935}
   - component: {fileID: 390421934}
   - component: {fileID: 390421933}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +907,7 @@ GameObject:
   - component: {fileID: 429154308}
   - component: {fileID: 429154307}
   - component: {fileID: 429154306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -977,7 +1003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525483140}
   - component: {fileID: 525483141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (4)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1021,7 +1047,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 821181984}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: COLLIDER (1)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1054,7 +1080,7 @@ Transform:
   - {fileID: 1899702207}
   - {fileID: 315114366}
   m_Father: {fileID: 1895494088627870616}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &947901584
 GameObject:
@@ -1066,7 +1092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 947901585}
   - component: {fileID: 947901586}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (7)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1111,7 +1137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070193872}
   - component: {fileID: 1070193873}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (10)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1156,7 +1182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079146304}
   - component: {fileID: 1079146305}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (9)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1201,7 +1227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131980016}
   - component: {fileID: 1131980015}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1246,7 +1272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202619100}
   - component: {fileID: 1202619101}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1291,7 +1317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234573647}
   - component: {fileID: 1234573648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (1)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1338,7 +1364,7 @@ GameObject:
   - component: {fileID: 1294150591}
   - component: {fileID: 1294150590}
   - component: {fileID: 1294150589}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1436,7 +1462,7 @@ GameObject:
   - component: {fileID: 1310167917}
   - component: {fileID: 1310167916}
   - component: {fileID: 1310167915}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411167145}
   - component: {fileID: 1411167146}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (6)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1577,7 +1603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506783406}
   - component: {fileID: 1506783407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (3)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1624,7 +1650,8 @@ GameObject:
   - component: {fileID: 1517442671}
   - component: {fileID: 1517442670}
   - component: {fileID: 1517442669}
-  m_Layer: 0
+  - component: {fileID: 1517442672}
+  m_Layer: 3
   m_Name: maniquiBo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1693,6 +1720,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1517442672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517442667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554553277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554553278}
   - component: {fileID: 1554553279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (9)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1748,7 +1787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634844617}
   - component: {fileID: 1634844618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (10)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1792,7 +1831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1673529436}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: COLLIDER
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1825,7 +1864,7 @@ Transform:
   - {fileID: 214056919}
   - {fileID: 1969689694}
   m_Father: {fileID: 1895494088627870616}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696762744
 GameObject:
@@ -1837,7 +1876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696762745}
   - component: {fileID: 1696762746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (5)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1882,7 +1921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761593808}
   - component: {fileID: 1761593809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (2)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1929,7 +1968,7 @@ GameObject:
   - component: {fileID: 1810506884}
   - component: {fileID: 1810506883}
   - component: {fileID: 1810506882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2025,7 +2064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899702207}
   - component: {fileID: 1899702208}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (11)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2070,7 +2109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900714167}
   - component: {fileID: 1900714168}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (4)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2115,7 +2154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950794630}
   - component: {fileID: 1950794631}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (2)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2160,7 +2199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1964538450}
   - component: {fileID: 1964538451}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (3)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2205,7 +2244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1969689694}
   - component: {fileID: 1969689695}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (12)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2252,7 +2291,7 @@ GameObject:
   - component: {fileID: 2005782830}
   - component: {fileID: 2005782829}
   - component: {fileID: 2005782828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2350,7 +2389,8 @@ GameObject:
   - component: {fileID: 2010630335}
   - component: {fileID: 2010630334}
   - component: {fileID: 2010630333}
-  m_Layer: 0
+  - component: {fileID: 2010630336}
+  m_Layer: 3
   m_Name: maniquiBo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2419,6 +2459,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &2010630336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010630331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2103414815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,7 +2481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103414816}
   - component: {fileID: 2103414817}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Colliders (6)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2488,7 +2540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106633677174252109}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25599998, z: 0}
+  m_LocalPosition: {x: 0, y: -0.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2507,7 +2559,7 @@ GameObject:
   - component: {fileID: 4636148423155223918}
   - component: {fileID: 6929172783465702476}
   - component: {fileID: 7408226171375258466}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2626,11 +2678,11 @@ Transform:
   - {fileID: 7210221876656960090}
   - {fileID: 4382117027366669048}
   - {fileID: 1833638610246877577}
-  - {fileID: 7183642161528614797}
   - {fileID: 2612522972814880932}
   - {fileID: 5717316089512157304}
   - {fileID: 1673529436}
   - {fileID: 821181984}
+  - {fileID: 7183642161528614797}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2646,7 +2698,7 @@ GameObject:
   - component: {fileID: 8821654741216586722}
   - component: {fileID: 7136587713846053641}
   - component: {fileID: 8696617780343368643}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2860,7 +2912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3010002089991584231}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0.437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2943,6 +2995,7 @@ GameObject:
   - component: {fileID: 2014755154055061353}
   - component: {fileID: 2410894050916565872}
   - component: {fileID: 6559257486878783924}
+  - component: {fileID: 1282571151}
   m_Layer: 0
   m_Name: Puerta2
   m_TagString: Untagged
@@ -2958,12 +3011,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3044067854874166583}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.256, z: 0}
+  m_LocalPosition: {x: -0, y: -0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1895494088627870616}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2014755154055061353
 MeshFilter:
@@ -3029,6 +3082,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3442661070987531627, guid: 91244fadd39829b49b5f017e17c49918, type: 3}
+--- !u!114 &1282571151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3044067854874166583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657b5bf5eab5df74bbcbf717dd79cdec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 106633677174252109}
+  speed: 0.5
 --- !u!1 &3726335715825260571
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,7 +3128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1895494088627870616}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2246542503374953767
 MeshFilter:
@@ -3342,7 +3409,8 @@ GameObject:
   - component: {fileID: 195299277}
   - component: {fileID: 195299276}
   - component: {fileID: 195299278}
-  m_Layer: 0
+  - component: {fileID: 195299282}
+  m_Layer: 3
   m_Name: maniquiBo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3411,6 +3479,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &195299282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6807828066796656601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7115916821472020388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3424,7 +3504,7 @@ GameObject:
   - component: {fileID: 4174530345260955081}
   - component: {fileID: 5240891644587527972}
   - component: {fileID: 426937744}
-  - component: {fileID: 426937745}
+  - component: {fileID: 299522038776149057}
   m_Layer: 0
   m_Name: Rueda_Cuchillas
   m_TagString: Untagged
@@ -3452,7 +3532,7 @@ Transform:
   - {fileID: 327053700}
   - {fileID: 33340772}
   m_Father: {fileID: 1895494088627870616}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3823869290331510330
 MeshFilter:
@@ -3530,7 +3610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &426937745
+--- !u!114 &299522038776149057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3539,10 +3619,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7115916821472020388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526dcedcfa0b42f47866acab6db8487f, type: 3}
+  m_Script: {fileID: 11500000, guid: cb602465ddb875345b3d960efcabc8c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 85
+  seconds: 0
+  minTime: 4
+  maxTime: 10
 --- !u!1 &7267208872191797583
 GameObject:
   m_ObjectHideFlags: 0
