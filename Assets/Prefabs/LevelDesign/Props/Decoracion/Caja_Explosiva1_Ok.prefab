@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8622169852354713331}
   - component: {fileID: 604248443607533545}
   - component: {fileID: 1467816405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Caja_Explosiva1_Ok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 425590711943502182}
   - component: {fileID: 5085629009090849854}
   - component: {fileID: 6736828323663760242}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Barras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 9122565634984744945}
   - component: {fileID: 8809463733782293908}
   - component: {fileID: 6181538350360531667}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Caja
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 3775825244746616596}
   - component: {fileID: 3102421524174186406}
   - component: {fileID: 2110375265846812743}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Luz
   m_TagString: Untagged
   m_Icon: {fileID: 0}

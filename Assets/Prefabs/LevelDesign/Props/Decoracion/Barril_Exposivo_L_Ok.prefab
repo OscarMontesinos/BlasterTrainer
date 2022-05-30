@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4720659420217526691}
   - component: {fileID: 1765808781923952445}
   - component: {fileID: 2496338799713773165}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Barril_Exposivo_L_Ok
   m_TagString: object
   m_Icon: {fileID: 0}

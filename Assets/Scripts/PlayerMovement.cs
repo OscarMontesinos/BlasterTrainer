@@ -144,7 +144,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
-        camHandler.seguir = false;
         Instantiate(explosion, transform.position, transform.rotation);
         _rigidbody.velocity = new Vector3(0, 0, 0);
         transform.position = checkpoint.transform.position;
