@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 33340774}
   - component: {fileID: 33340773}
   - component: {fileID: 33340776}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: maniquiBo (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89059135}
   - component: {fileID: 89059136}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (1)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119856540}
   - component: {fileID: 119856541}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (5)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 189686862}
   - component: {fileID: 189686861}
   - component: {fileID: 189686860}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,8 @@ GameObject:
   - component: {fileID: 200157941}
   - component: {fileID: 200157940}
   - component: {fileID: 200157939}
-  m_Layer: 0
+  - component: {fileID: 275919451}
+  m_Layer: 6
   m_Name: engranaje (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,6 +381,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5189478239521357827, guid: 91244fadd39829b49b5f017e17c49918, type: 3}
+--- !u!114 &275919451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200157937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526dcedcfa0b42f47866acab6db8487f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
 --- !u!1 &209783524
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209783525}
   - component: {fileID: 209783526}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (7)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -435,7 +449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214056919}
   - component: {fileID: 214056920}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (11)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -470,6 +484,106 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 14.644533, z: 5.7320213}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &224118950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224118951}
+  - component: {fileID: 224118954}
+  - component: {fileID: 224118953}
+  - component: {fileID: 224118952}
+  m_Layer: 6
+  m_Name: Sala (1)
+  m_TagString: object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &224118951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224118950}
+  m_LocalRotation: {x: -0, y: -0.70710707, z: -0, w: 0.70710653}
+  m_LocalPosition: {x: -0.00024205446, y: -0.198, z: 0.0008738516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1895494088627870616}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!33 &224118954
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224118950}
+  m_Mesh: {fileID: 2718223538384875956, guid: 91244fadd39829b49b5f017e17c49918, type: 3}
+--- !u!23 &224118953
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224118950}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e3ee24895e4390e4a9b0cdc1d55d8263, type: 2}
+  - {fileID: 2100000, guid: e7691c987a943a74fbf48b2bb37def8a, type: 2}
+  - {fileID: 2100000, guid: b1422d6207040ba449aa9b88d7b034bf, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &224118952
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224118950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2718223538384875956, guid: 91244fadd39829b49b5f017e17c49918, type: 3}
 --- !u!1 &240704232
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +596,7 @@ GameObject:
   - component: {fileID: 240704236}
   - component: {fileID: 240704235}
   - component: {fileID: 240704234}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282134500}
   - component: {fileID: 282134501}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (8)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -623,7 +737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 295742346}
   - component: {fileID: 295742347}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (8)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -668,7 +782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315114366}
   - component: {fileID: 315114367}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (12)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -716,7 +830,7 @@ GameObject:
   - component: {fileID: 327053702}
   - component: {fileID: 327053701}
   - component: {fileID: 327053704}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: maniquiBo (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,7 +923,7 @@ GameObject:
   - component: {fileID: 390421935}
   - component: {fileID: 390421934}
   - component: {fileID: 390421933}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +1021,7 @@ GameObject:
   - component: {fileID: 429154308}
   - component: {fileID: 429154307}
   - component: {fileID: 429154306}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525483140}
   - component: {fileID: 525483141}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (4)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1047,7 +1161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 821181984}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: COLLIDER (1)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1092,7 +1206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 947901585}
   - component: {fileID: 947901586}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (7)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1137,7 +1251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070193872}
   - component: {fileID: 1070193873}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (10)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1182,7 +1296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079146304}
   - component: {fileID: 1079146305}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (9)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1227,7 +1341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131980016}
   - component: {fileID: 1131980015}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1272,7 +1386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202619100}
   - component: {fileID: 1202619101}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1317,7 +1431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234573647}
   - component: {fileID: 1234573648}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (1)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1364,7 +1478,7 @@ GameObject:
   - component: {fileID: 1294150591}
   - component: {fileID: 1294150590}
   - component: {fileID: 1294150589}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1462,7 +1576,7 @@ GameObject:
   - component: {fileID: 1310167917}
   - component: {fileID: 1310167916}
   - component: {fileID: 1310167915}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411167145}
   - component: {fileID: 1411167146}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (6)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1603,7 +1717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506783406}
   - component: {fileID: 1506783407}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (3)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1651,7 +1765,7 @@ GameObject:
   - component: {fileID: 1517442670}
   - component: {fileID: 1517442669}
   - component: {fileID: 1517442672}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: maniquiBo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1742,7 +1856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554553278}
   - component: {fileID: 1554553279}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (9)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1787,7 +1901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634844617}
   - component: {fileID: 1634844618}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (10)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1831,7 +1945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1673529436}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: COLLIDER
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1876,7 +1990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696762745}
   - component: {fileID: 1696762746}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (5)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1921,7 +2035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761593808}
   - component: {fileID: 1761593809}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (2)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -1968,7 +2082,7 @@ GameObject:
   - component: {fileID: 1810506884}
   - component: {fileID: 1810506883}
   - component: {fileID: 1810506882}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2064,7 +2178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899702207}
   - component: {fileID: 1899702208}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (11)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2109,7 +2223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900714167}
   - component: {fileID: 1900714168}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (4)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2154,7 +2268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950794630}
   - component: {fileID: 1950794631}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (2)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2199,7 +2313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1964538450}
   - component: {fileID: 1964538451}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (3)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2244,7 +2358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1969689694}
   - component: {fileID: 1969689695}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (12)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2291,7 +2405,7 @@ GameObject:
   - component: {fileID: 2005782830}
   - component: {fileID: 2005782829}
   - component: {fileID: 2005782828}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2390,7 +2504,7 @@ GameObject:
   - component: {fileID: 2010630334}
   - component: {fileID: 2010630333}
   - component: {fileID: 2010630336}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: maniquiBo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2481,7 +2595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103414816}
   - component: {fileID: 2103414817}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Colliders (6)
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2525,7 +2639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1833638610246877577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Destination
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2559,7 +2673,7 @@ GameObject:
   - component: {fileID: 4636148423155223918}
   - component: {fileID: 6929172783465702476}
   - component: {fileID: 7408226171375258466}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2654,7 +2768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1895494088627870616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sala1_OK
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -2683,6 +2797,7 @@ Transform:
   - {fileID: 1673529436}
   - {fileID: 821181984}
   - {fileID: 7183642161528614797}
+  - {fileID: 224118951}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2698,7 +2813,7 @@ GameObject:
   - component: {fileID: 8821654741216586722}
   - component: {fileID: 7136587713846053641}
   - component: {fileID: 8696617780343368643}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2796,7 +2911,7 @@ GameObject:
   - component: {fileID: 4902417662084314865}
   - component: {fileID: 5363127595361254939}
   - component: {fileID: 8713401671687832606}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cables1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2897,7 +3012,7 @@ GameObject:
   - component: {fileID: 6228038450685068899}
   - component: {fileID: 8168507667364276522}
   - component: {fileID: 4891055300900020309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Puerta1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2996,7 +3111,7 @@ GameObject:
   - component: {fileID: 2410894050916565872}
   - component: {fileID: 6559257486878783924}
   - component: {fileID: 1282571151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Puerta2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3108,7 +3223,7 @@ GameObject:
   - component: {fileID: 2246542503374953767}
   - component: {fileID: 8497013646915421913}
   - component: {fileID: 3198066411193912904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sala
   m_TagString: object
   m_Icon: {fileID: 0}
@@ -3208,7 +3323,7 @@ GameObject:
   - component: {fileID: 4631291949885131669}
   - component: {fileID: 5630881697234006661}
   - component: {fileID: 8831430763330370210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cables2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3309,7 +3424,7 @@ GameObject:
   - component: {fileID: 3794984919858984942}
   - component: {fileID: 3231190819864230167}
   - component: {fileID: 2014045118431116105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Camara1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3410,7 +3525,7 @@ GameObject:
   - component: {fileID: 195299276}
   - component: {fileID: 195299278}
   - component: {fileID: 195299282}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: maniquiBo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3505,7 +3620,7 @@ GameObject:
   - component: {fileID: 5240891644587527972}
   - component: {fileID: 426937744}
   - component: {fileID: 299522038776149057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda_Cuchillas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3622,7 +3737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb602465ddb875345b3d960efcabc8c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 85
+  speed: 55
   seconds: 0
   minTime: 4
   maxTime: 10
@@ -3638,7 +3753,8 @@ GameObject:
   - component: {fileID: 8353235577042774864}
   - component: {fileID: 1712543319905316541}
   - component: {fileID: 1142158582213066235}
-  m_Layer: 0
+  - component: {fileID: 1900351753}
+  m_Layer: 6
   m_Name: engranaje
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3724,3 +3840,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5189478239521357827, guid: 91244fadd39829b49b5f017e17c49918, type: 3}
+--- !u!114 &1900351753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267208872191797583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526dcedcfa0b42f47866acab6db8487f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -100
