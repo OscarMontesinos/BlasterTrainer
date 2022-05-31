@@ -58,9 +58,8 @@ public class Ascensor : MonoBehaviour
     IEnumerator rotar()
     {
         puente.transform.parent = gameObject.transform;
-        while (toRotate > 0)
+        while (true)
         {
-            toRotate -= speed * 3 * Time.deltaTime;
             transform.eulerAngles += new Vector3(0, speed*3 * Time.deltaTime, 0);
             yield return null;
         }
