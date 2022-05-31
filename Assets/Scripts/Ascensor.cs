@@ -12,6 +12,7 @@ public class Ascensor : MonoBehaviour
     public GameObject puente;
     bool bajar = true;
     public bool subir = false;
+    public float toRotate;
 
     public IEnumerator Moverse(Transform destiny)
     {
@@ -57,8 +58,9 @@ public class Ascensor : MonoBehaviour
     IEnumerator rotar()
     {
         puente.transform.parent = gameObject.transform;
-        while (transform.eulerAngles.x <178)
+        while (toRotate > 0)
         {
+            toRotate -= speed * 3 * Time.deltaTime;
             transform.eulerAngles += new Vector3(0, speed*3 * Time.deltaTime, 0);
             yield return null;
         }
