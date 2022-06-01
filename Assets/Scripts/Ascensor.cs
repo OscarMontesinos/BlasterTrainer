@@ -7,7 +7,7 @@ public class Ascensor : MonoBehaviour
     public Transform arriba;
     public Transform abajo;
     public float speed;
-
+    bool moviendo;
 
     public GameObject puente;
     bool bajar = true;
@@ -16,6 +16,8 @@ public class Ascensor : MonoBehaviour
 
     public IEnumerator Moverse(Transform destiny)
     {
+        moviendo = true;
+        yield return new WaitForSeconds(0.1f);
         var dir = destiny.position - transform.position;
         while(dir.magnitude >= 0.1f)
         {
@@ -23,21 +25,22 @@ public class Ascensor : MonoBehaviour
             transform.Translate(dir.normalized * speed * Time.deltaTime);
             yield return null;
         }
+        moviendo = false;
     }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             collision.transform.parent = gameObject.transform;
-        }
-        if (bajar)
-        {
-            bajar = false;
-            StartCoroutine(Moverse(abajo));
-        }
-        if (subir)
-        {
-            StartCoroutine(gg());
+            if (bajar && !moviendo)
+            {
+                bajar = false;
+                StartCoroutine(Moverse(abajo));
+            }
+            if (subir && !moviendo)
+            {
+                StartCoroutine(gg());
+            }
         }
        
     }
@@ -60,7 +63,7 @@ public class Ascensor : MonoBehaviour
         puente.transform.parent = gameObject.transform;
         while (true)
         {
-            transform.eulerAngles += new Vector3(0, speed*3 * Time.deltaTime, 0);
+            transform.eulerAngles += new Vector3(0, speed * Time.deltaTime, 0);
             yield return null;
         }
     }

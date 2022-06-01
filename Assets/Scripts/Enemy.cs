@@ -4,21 +4,50 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    Animator animator;
     float y;
     public float speed;
     GameObject player;
+    public float viraje;
+    public bool mirar;
+    Quaternion targetRotation;
     // Start is called before the first frame update
     void Awake()
     {
         y = transform.position.y;
         player = FindObjectOfType<PlayerMovement>().gameObject;
+        animator = GetComponent<Animator>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        var dir = player.transform.position - transform.position;
-
+        
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, y, transform.position.z);
+        if (mirar)
+        {
+            
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speed * Time.deltaTime);
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+        }
+        else
+        {
+            targetRotation = Quaternion.LookRotation(new Vector3(player.transform.position.x + Random.Range(-viraje, viraje), player.transform.position.y, player.transform.position.z + Random.Range(-viraje, viraje)) - transform.position);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Bullet")
+        {
+            other.transform.GetChild(0).parent = null;
+            Destroy(other.gameObject);
+            Die();
+        }
+    }
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }

@@ -1236,8 +1236,8 @@ Rigidbody:
   m_GameObject: {fileID: 2700268108439913104}
   serializedVersion: 2
   m_Mass: 20
-  m_Drag: 3.14
-  m_AngularDrag: 3.43
+  m_Drag: 5.32
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1272,16 +1272,16 @@ MonoBehaviour:
   _rigidbody: {fileID: 871906784817887295}
   cam: {fileID: 0}
   camHandler: {fileID: 0}
-  speed: 130
+  speed: 269
   speedTurn: 500
   speedTurnMultiplier: 45
   speedTurnMax: 500
-  jumpSpeed: 25
+  jumpSpeed: 45
   hookTractionSpeed: 1900
-  shootRecoil: 6.5
-  shootTime: 0.35
-  maxSpeed: 17
-  gravityMultiplier: 5
+  shootRecoil: 20
+  shootTime: 0.15
+  maxSpeed: 123.8
+  gravityMultiplier: 64.3
   maskProjectile:
     serializedVersion: 2
     m_Bits: 0
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   camGo: {fileID: 0}
   apuntable:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 72
   animatorR: {fileID: 2964732551753026977}
   animatorL: {fileID: 3371861809660133690}
   animatorWheel: {fileID: 0}
