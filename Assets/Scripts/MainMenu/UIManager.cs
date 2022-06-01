@@ -9,6 +9,10 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("LevelDesign");
     }
+     public void LoadSceneOptions()
+        {
+            SceneManager.LoadScene("Options");
+        }
 
     public void Exit()
     {
