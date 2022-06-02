@@ -6,6 +6,7 @@ TagManager:
   tags:
   - object
   - Bullet
+  - gancheable
   layers:
   - Default
   - TransparentFX

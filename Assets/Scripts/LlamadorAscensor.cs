@@ -5,6 +5,7 @@ using UnityEngine;
 public class LlamadorAscensor : MonoBehaviour
 {
     Ascensor ascensor;
+    bool done;
         private void Awake()
     {
         ascensor = FindObjectOfType<Ascensor>();
