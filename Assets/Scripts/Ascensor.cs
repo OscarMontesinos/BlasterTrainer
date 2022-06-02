@@ -10,12 +10,16 @@ public class Ascensor : MonoBehaviour
     bool moviendo;
 
     public GameObject puente;
-    bool bajar = true;
+    public bool bajar = true;
     public bool subir = false;
     public float toRotate;
+    public Luz luz1;
+    public Luz luz2;
 
     public IEnumerator Moverse(Transform destiny)
     {
+        luz1.ChangeState(true);
+        luz2.ChangeState(true);
         moviendo = true;
         yield return new WaitForSeconds(0.1f);
         var dir = destiny.position - transform.position;
@@ -25,6 +29,8 @@ public class Ascensor : MonoBehaviour
             transform.Translate(dir.normalized * speed * Time.deltaTime);
             yield return null;
         }
+        luz1.ChangeState(false);
+        luz2.ChangeState(false);
         moviendo = false;
     }
     private void OnCollisionEnter(Collision collision)

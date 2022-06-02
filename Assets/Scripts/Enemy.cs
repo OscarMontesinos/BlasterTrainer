@@ -46,6 +46,13 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            Destroy(transform.parent.gameObject);
+        }
+    }
     void Die()
     {
         Destroy(gameObject);

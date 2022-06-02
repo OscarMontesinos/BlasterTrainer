@@ -2,21 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LlamadorAscensor : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
+    public GameObject enemies;
     Ascensor ascensor;
-    bool done;
+
     private void Awake()
     {
         ascensor = FindObjectOfType<Ascensor>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player" && !ascensor.subir)
         {
-            ascensor.StartCoroutine(ascensor.Moverse(ascensor.arriba));
-            ascensor.bajar = true;
+            Instantiate(enemies,transform.position,transform.rotation);
         }
     }
-    
 }

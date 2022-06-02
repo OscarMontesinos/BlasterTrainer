@@ -9,6 +9,7 @@ public class RotadorRandom : MonoBehaviour
     public float minTime;
     public float maxTime;
     bool dentro = true;
+    public Luz luz;
     // Start is called before the first frame update
     void Awake()
     {
@@ -19,6 +20,10 @@ public class RotadorRandom : MonoBehaviour
     void Update()
     {
         seconds -= Time.deltaTime;
+        if(seconds <= 1.5f)
+        {
+            luz.ChangeState(true);
+        }
         if (seconds <= 0 && dentro)
         {
             dentro = false;
@@ -37,6 +42,7 @@ public class RotadorRandom : MonoBehaviour
 
     IEnumerator Cambio(bool positivo)
     {
+        
         float destino = -speed;
         while (speed != destino)
         {
@@ -51,6 +57,7 @@ public class RotadorRandom : MonoBehaviour
             }
             yield return null;
         }
+        luz.ChangeState(false);
         dentro = true;
     }
 }
