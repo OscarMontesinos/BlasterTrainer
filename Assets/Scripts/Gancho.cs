@@ -105,7 +105,7 @@ public class Gancho : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "object" && avanzando)
+        if (other.gameObject.tag == "gancheable" && avanzando)
         {
             enganchado = true;
             transform.parent = other.gameObject.transform;
