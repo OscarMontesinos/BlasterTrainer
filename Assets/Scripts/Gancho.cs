@@ -12,6 +12,7 @@ public class Gancho : MonoBehaviour
     float path = 0;
     public GameObject point;
     public GameObject robot;
+    public LayerMask ganchoLayer;
 
     public virtual void Awake()
     {
@@ -64,7 +65,7 @@ public class Gancho : MonoBehaviour
         Ray ray = Camera.main.ViewportPointToRay(rayOrigin);
         transform.rotation = robot.transform.rotation;
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, range))
+        if (Physics.Raycast(ray, out hit, range,ganchoLayer))
         {
             transform.LookAt(hit.point);
         }

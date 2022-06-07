@@ -18,12 +18,14 @@ public class Cuchilla : MonoBehaviour
 
     IEnumerator Behaviour()
     {
-        Vector3 dir = new Vector3(1000,10001,1000);
+        Vector3 dir = new Vector3(1,1,1);
         
         while (dir.magnitude > 0.5f)
         {
+            
             if (pos2B) { dir = pos2.position - transform.position; }
             else { dir = pos1.position - transform.position; }
+           
             transform.Translate(dir.normalized * speed * Time.deltaTime);
             yield return null;
         }

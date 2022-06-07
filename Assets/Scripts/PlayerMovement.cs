@@ -80,11 +80,9 @@ public class PlayerMovement : MonoBehaviour
             jumpable = false;
             _rigidbody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
         }
-        if (Input.GetMouseButton(0) && shootTimer <= 0)
+        if (Input.GetMouseButton(0) && shootTimer <= 0 && !gancho.GetComponent<Gancho>().enganchado)
         {
             Shoot();
-            _rigidbody.AddForce(cam.transform.forward * -shootRecoil, ForceMode.Impulse);
-            shootTimer = shootTime;
         }
         if (Input.GetKey(KeyCode.W) && !FindObjectOfType<Gancho>().enganchado)
         {
@@ -149,9 +147,16 @@ public class PlayerMovement : MonoBehaviour
         transform.position = checkpoint.transform.position;
         checkpoint.GetComponent<CheckPoint>().StartCoroutine(checkpoint.GetComponent<CheckPoint>().Respawn());
         gameObject.SetActive(false);
+        var trackers = FindObjectsOfType<Tracker>();
+        foreach(Tracker tracker in trackers)
+        {
+            tracker.GetComponent<LineRenderer>().enabled = false;
+        }
     }
     void Shoot()
     {
+        _rigidbody.AddForce(cam.transform.forward * -shootRecoil, ForceMode.Impulse);
+        shootTimer = shootTime;
         Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0f);
         Ray ray = Camera.main.ViewportPointToRay(rayOrigin);
         RaycastHit hit;
