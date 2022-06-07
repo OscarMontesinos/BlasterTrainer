@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.CompareTag("Bullet"))
         {
             other.transform.GetChild(0).parent = null;
             Destroy(other.gameObject);
@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.CompareTag("Player"))
         {
             Destroy(transform.parent.gameObject);
         }

@@ -17,11 +17,9 @@ public class Maniqui : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Bullet")
+        if(other.gameObject.CompareTag("Bullet"))
         {
             hp--;
-            if (hp == 0)
-            {
                 if (progress == 0)
                 {
                     progress++;
@@ -33,9 +31,9 @@ public class Maniqui : MonoBehaviour
                    parte1.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                    parte1.GetComponent<Rigidbody>().useGravity = true;
                    parte1.GetComponent<Rigidbody>().AddForce(dirForce * force);*/
-                    hp = mhp;
                 }
-                else
+            else if (hp == 0)
+            {
                 {
                     /* parte2.transform.parent = null;
                      var dirForce = transform.position - collision.transform.position;

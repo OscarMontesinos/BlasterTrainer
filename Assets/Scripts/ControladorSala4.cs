@@ -16,6 +16,10 @@ public class ControladorSala4 : MonoBehaviour
         {
             Actualizar();
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Destroy(gameObject);
+        }
     }
     void Actualizar()
     {
