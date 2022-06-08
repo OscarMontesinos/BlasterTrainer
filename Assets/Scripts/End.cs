@@ -7,7 +7,7 @@ public class End : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("MainMenu");

@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask maskProjectile;
     public bool jumpable = true;
     float mass;
+    public bool shootingAble = true;
 
     public Transform canon1;
     public Transform canon2;
@@ -155,26 +156,31 @@ public class PlayerMovement : MonoBehaviour
     }
     void Shoot()
     {
-        _rigidbody.AddForce(cam.transform.forward * -shootRecoil, ForceMode.Impulse);
-        shootTimer = shootTime;
-        Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0f);
-        Ray ray = Camera.main.ViewportPointToRay(rayOrigin);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 1000, apuntable))
+        if (shootingAble)
         {
-            shoots++;
-            if(shoots % 2 != 0)
-            {
-                GameObject bala = (GameObject)Instantiate(bullet, canon1.position, transform.rotation);
-                bala.transform.LookAt(hit.point);
-                animatorL.SetTrigger("Disparar");
-            }
-            else
-            {
-                GameObject bala = (GameObject)Instantiate(bullet, canon2.position, transform.rotation);
-                bala.transform.LookAt(hit.point);
 
-                animatorR.SetTrigger("Disparar");
+
+            _rigidbody.AddForce(cam.transform.forward * -shootRecoil, ForceMode.Impulse);
+            shootTimer = shootTime;
+            Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0f);
+            Ray ray = Camera.main.ViewportPointToRay(rayOrigin);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 1000, apuntable))
+            {
+                shoots++;
+                if (shoots % 2 != 0)
+                {
+                    GameObject bala = (GameObject)Instantiate(bullet, canon1.position, transform.rotation);
+                    bala.transform.LookAt(hit.point);
+                    animatorL.SetTrigger("Disparar");
+                }
+                else
+                {
+                    GameObject bala = (GameObject)Instantiate(bullet, canon2.position, transform.rotation);
+                    bala.transform.LookAt(hit.point);
+
+                    animatorR.SetTrigger("Disparar");
+                }
             }
         }
     }
