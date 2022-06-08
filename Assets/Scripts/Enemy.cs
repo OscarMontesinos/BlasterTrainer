@@ -41,8 +41,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            other.transform.GetChild(0).parent = null;
-            Destroy(other.gameObject);
+            
             Die();
         }
     }
