@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody _rigidbody;
     public Camera cam;
+    public CameraPlayer camHandler;
     Vector3 movement;
     float horizontalInput = 0;
     float verticalInput = 0;
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         animatorWheel = GetComponent<Animator>();
+        camHandler = FindObjectOfType<CameraPlayer>();
         mass = _rigidbody.mass;
         Cursor.lockState = CursorLockMode.Locked;
         speedB = speedTurn;
@@ -83,6 +85,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButton(0) && shootTimer <= 0 && !gancho.GetComponent<Gancho>().enganchado)
         {
             Shoot();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!paused)
+            {
+                Time.timeScale = 0;
+            }
         }
         if (Input.GetKey(KeyCode.W) && !FindObjectOfType<Gancho>().enganchado)
         {
