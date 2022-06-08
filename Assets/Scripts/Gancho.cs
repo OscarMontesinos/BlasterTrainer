@@ -110,6 +110,7 @@ public class Gancho : MonoBehaviour
         {
             enganchado = true;
             transform.parent = other.gameObject.transform;
+            GetComponent<AudioSource>().Play();
         }
     }
 }

@@ -30,6 +30,7 @@ public class Puerta : MonoBehaviour
     }
     IEnumerator open()
     {
+        GetComponent<AudioSource>().Play();
         var dist = destination.transform.position - transform.position;
         while (dist.magnitude >0.5f)
         {
@@ -37,5 +38,6 @@ public class Puerta : MonoBehaviour
             dist = destination.transform.position - transform.position;
             yield return null;
         }
+        GetComponent<AudioSource>().Stop();
     }
 }

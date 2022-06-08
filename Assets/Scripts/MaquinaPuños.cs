@@ -52,6 +52,7 @@ public class MaquinaPuños : MonoBehaviour
     }
     IEnumerator Maquinaria(float destiny)
     {
+        GetComponent<AudioSource>().Play();
         if (destiny == target1) 
         {
             while (puño.transform.localPosition.z >= target1)

@@ -224,158 +224,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &71421565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 71421567}
-  - component: {fileID: 71421566}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &71421566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71421565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2c66dfa3b1e34c4fa2da5a70b4863d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listSounds:
-  - name: Ventilador
-    audioClip: {fileID: 8300000, guid: dad798dcf82ba064886e0b61d2c96e83, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: "RomperMu\xF1eco"
-    audioClip: {fileID: 8300000, guid: 587d6e866998564448539f396860f1c6, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: "DisparoCa\xF1on"
-    audioClip: {fileID: 8300000, guid: 5166e4ff28972044e8085f372da5d0dc, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: VentiladorGrande
-    audioClip: {fileID: 8300000, guid: c38a2b6543707504ab162e7141b8f2f5, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: Motor
-    audioClip: {fileID: 8300000, guid: faaf6a8501c32834b8f706b59bdfbe65, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: ExplosionBarril
-    audioClip: {fileID: 8300000, guid: 49bf37b66d4d30b48962dc7b059a9d24, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: ExplosionMuerte
-    audioClip: {fileID: 8300000, guid: c277b9ec5511e9b4fad348e7e60781df, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: InteriorZonaEnemigos
-    audioClip: {fileID: 8300000, guid: d5e506b3bb256ed478a4773e804de45d, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: Disparo
-    audioClip: {fileID: 8300000, guid: c8ef6497aee81084baa3274a3b4d48dd, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: ExplosionCaja
-    audioClip: {fileID: 8300000, guid: 9ec26bf2b0669914fa2412e1ce6fc0e5, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: Gancho
-    audioClip: {fileID: 8300000, guid: b2e6c9ad4dd902a4bbbdd8a8dd1abbe3, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: AcercarGancho
-    audioClip: {fileID: 8300000, guid: 7b1f3b0dbf75d8b4687c79f67ff1c664, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: PuertaYsonidoExterior
-    audioClip: {fileID: 8300000, guid: 74bad7ad4a0ba6a4daa58878c29f5392, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: SonidoExteriorNave
-    audioClip: {fileID: 8300000, guid: 9e0769200d5192446bf207be9e388b60, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: Saltar
-    audioClip: {fileID: 8300000, guid: 470e02199a7f0d14dae3cdf5c4a07b86, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: MusicaAmbienteJuego
-    audioClip: {fileID: 8300000, guid: 5589fbaeb9a7cfc41940f357b2d0ad8e, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  - name: MusicaMenu
-    audioClip: {fileID: 8300000, guid: c9c5c372857ccbb419941ac63f3d5a85, type: 3}
-    volume: 0
-    pitch: 0
-    playOnAwake: 0
-    audioSource: {fileID: 0}
-  volume: 0
-  function: 0
-  mute: 0
-  botonFunction: 
-  loop: 0
---- !u!4 &71421567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71421565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126.0631, y: 1.304434, z: 13.476426}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262260235
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +534,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177377438}
   m_CullTransparentMesh: 1
+--- !u!1 &1298202048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298202050}
+  - component: {fileID: 1298202049}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1298202049
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298202048}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c9c5c372857ccbb419941ac63f3d5a85, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1298202050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298202048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -83.86773, y: -8.866875, z: -24.658102}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1436973398
 GameObject:
   m_ObjectHideFlags: 0

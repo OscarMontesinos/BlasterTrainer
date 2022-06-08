@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound sound in listSounds)
         {
-            if (sound.name == name && !function && !mute && !loop)
+            if (sound.name == name)
             {
                 sound.audioSource.Play();
             }

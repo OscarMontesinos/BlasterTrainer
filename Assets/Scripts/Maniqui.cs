@@ -6,6 +6,7 @@ public class Maniqui : MonoBehaviour
 {
     public GameObject parte1;
     public GameObject parte2;
+    public GameObject explosion;
     public int progress;
     public float force;
     public int mhp;
@@ -19,6 +20,7 @@ public class Maniqui : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Bullet"))
         {
+            GetComponent<AudioSource>().Play();
             hp--;
                 if (progress == 0)
                 {
@@ -40,7 +42,7 @@ public class Maniqui : MonoBehaviour
                      parte1.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                      parte2.GetComponent<Rigidbody>().useGravity = true;
                      parte2.GetComponent<Rigidbody>().AddForce(dirForce * force);*/
-
+                    Instantiate(explosion, transform.position, transform.rotation);
                     Destroy(gameObject);
 
                 }

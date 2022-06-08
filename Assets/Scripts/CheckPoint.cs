@@ -20,6 +20,7 @@ public class CheckPoint : MonoBehaviour
     public IEnumerator Respawn()
     {
         yield return new WaitForSeconds(respawnTime);
-        player.SetActive(true);
+        player.SetActive(true); 
+        player.transform.position = transform.position;
     }
 }

@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody _rigidbody;
     public Camera cam;
-    public CameraPlayer camHandler;
     Vector3 movement;
     float horizontalInput = 0;
     float verticalInput = 0;
@@ -26,6 +25,10 @@ public class PlayerMovement : MonoBehaviour
     public bool jumpable = true;
     float mass;
     public bool shootingAble = true;
+    bool paused;
+    public GameObject menu;
+
+    public GameObject explosionAudio;
 
     public Transform canon1;
     public Transform canon2;
@@ -45,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         animatorWheel = GetComponent<Animator>();
-        camHandler = FindObjectOfType<CameraPlayer>();
         mass = _rigidbody.mass;
         Cursor.lockState = CursorLockMode.Locked;
         speedB = speedTurn;
@@ -81,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
             jumpable = false;
             animatorWheel.SetTrigger("Salto");
             _rigidbody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetMouseButton(0) && shootTimer <= 0 && !gancho.GetComponent<Gancho>().enganchado)
         {
@@ -91,6 +94,14 @@ public class PlayerMovement : MonoBehaviour
             if (!paused)
             {
                 Time.timeScale = 0;
+                menu.SetActive(true);
+                paused = !paused;
+            }
+            else
+            {
+                Time.timeScale = 1;
+                menu.SetActive(false);
+                paused = !paused;
             }
         }
         if (Input.GetKey(KeyCode.W) && !FindObjectOfType<Gancho>().enganchado)
@@ -157,11 +168,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
+        Instantiate(explosionAudio, transform.position, transform.rotation);
         transform.parent = null;
         FindObjectOfType<Timer>().seconds += 10;
         Instantiate(explosion, transform.position, transform.rotation);
         _rigidbody.velocity = new Vector3(0, 0, 0);
-        transform.position = checkpoint.transform.position;
+       
         checkpoint.GetComponent<CheckPoint>().StartCoroutine(checkpoint.GetComponent<CheckPoint>().Respawn());
         gameObject.SetActive(false);
         var trackers = FindObjectsOfType<Tracker>();
@@ -174,7 +186,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (shootingAble)
         {
-
 
             _rigidbody.AddForce(cam.transform.forward * -shootRecoil, ForceMode.Impulse);
             shootTimer = shootTime;

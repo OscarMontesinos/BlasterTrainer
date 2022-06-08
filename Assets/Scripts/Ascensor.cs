@@ -18,6 +18,7 @@ public class Ascensor : MonoBehaviour
 
     public IEnumerator Moverse(Transform destiny)
     {
+        GetComponent<AudioSource>().Play();
         luz1.ChangeState(true);
         luz2.ChangeState(true);
         moviendo = true;
@@ -32,6 +33,7 @@ public class Ascensor : MonoBehaviour
         luz1.ChangeState(false);
         luz2.ChangeState(false);
         moviendo = false;
+        GetComponent<AudioSource>().Stop();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -66,6 +68,7 @@ public class Ascensor : MonoBehaviour
     }
     IEnumerator rotar()
     {
+        GetComponent<AudioSource>().Play();
         puente.transform.parent = gameObject.transform;
         while (true)
         {
