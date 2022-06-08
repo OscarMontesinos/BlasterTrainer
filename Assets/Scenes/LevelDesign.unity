@@ -1051,6 +1051,7 @@ GameObject:
   - component: {fileID: 72792572}
   - component: {fileID: 72792571}
   - component: {fileID: 72792570}
+  - component: {fileID: 72792573}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -1137,6 +1138,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72792567}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &72792573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72792567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &94801746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3621,6 +3634,7 @@ GameObject:
   - component: {fileID: 224187317}
   - component: {fileID: 224187316}
   - component: {fileID: 224187315}
+  - component: {fileID: 224187318}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -3707,6 +3721,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224187312}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &224187318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224187312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &224717395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3883,8 +3909,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234362794}
-  m_LocalRotation: {x: -0.02373519, y: 0.71109825, z: 0.024033196, w: 0.7022809}
-  m_LocalPosition: {x: 0.27161863, y: 0.24189995, z: 0.1204}
+  m_LocalRotation: {x: -0.018163841, y: 0.84328765, z: 0.028556032, w: 0.53639597}
+  m_LocalPosition: {x: 0.07764831, y: 0.015471841, z: 0.119002394}
   m_LocalScale: {x: 0.010000004, y: 0.009999998, z: 0.0100000035}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3993,6 +4019,7 @@ GameObject:
   - component: {fileID: 236314842}
   - component: {fileID: 236314841}
   - component: {fileID: 236314840}
+  - component: {fileID: 236314843}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -4079,6 +4106,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236314837}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &236314843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236314837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &241423250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15888,19 +15927,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8946475207896993764, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7025963
+      value: 0.53663754
       objectReference: {fileID: 0}
     - target: {fileID: 8946475207896993764, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.010957145
+      value: -0.008404062
       objectReference: {fileID: 0}
     - target: {fileID: 8946475207896993764, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7114178
+      value: 0.84366757
       objectReference: {fileID: 0}
     - target: {fileID: 8946475207896993764, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.011094717
+      value: 0.013212336
       objectReference: {fileID: 0}
     - target: {fileID: 8946475207896993765, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
@@ -15908,19 +15947,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208268735081, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7022808
+      value: 0.5363959
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208268735081, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.02373519
+      value: -0.018163836
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208268735081, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.71109825
+      value: 0.8432877
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208268735081, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.024033196
+      value: 0.028556032
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208268735086, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
@@ -15936,15 +15975,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208735703933, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 214.96187
+      value: 191.19568
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208735703933, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.59
+      value: -6.1997256
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208735703933, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.959998
+      value: -11.136039
       objectReference: {fileID: 0}
     - target: {fileID: 8946475208735703933, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15988,19 +16027,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8946475209340745767, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7017346
+      value: 0.5359781
       objectReference: {fileID: 0}
     - target: {fileID: 8946475209340745767, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.03647168
+      value: -0.02789185
       objectReference: {fileID: 0}
     - target: {fileID: 8946475209340745767, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.71054524
+      value: 0.84263086
       objectReference: {fileID: 0}
     - target: {fileID: 8946475209340745767, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0369296
+      value: 0.0438498
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f6eb7deb4aa61448656e26d6f996a7, type: 3}
@@ -16073,6 +16112,7 @@ GameObject:
   - component: {fileID: 1238156400}
   - component: {fileID: 1238156399}
   - component: {fileID: 1238156398}
+  - component: {fileID: 1238156401}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -16159,6 +16199,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238156395}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &1238156401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238156395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240705198
 GameObject:
   m_ObjectHideFlags: 0
@@ -17711,6 +17763,7 @@ GameObject:
   - component: {fileID: 1380015115}
   - component: {fileID: 1380015114}
   - component: {fileID: 1380015113}
+  - component: {fileID: 1380015116}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -17797,6 +17850,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380015110}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &1380015116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380015110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1382393540
 GameObject:
   m_ObjectHideFlags: 0
@@ -21906,6 +21971,7 @@ GameObject:
   - component: {fileID: 1665393801}
   - component: {fileID: 1665393800}
   - component: {fileID: 1665393799}
+  - component: {fileID: 1665393802}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -21992,6 +22058,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665393796}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &1665393802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665393796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1675956360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25420,6 +25498,7 @@ GameObject:
   - component: {fileID: 1890285807}
   - component: {fileID: 1890285806}
   - component: {fileID: 1890285805}
+  - component: {fileID: 1890285808}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -25506,6 +25585,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890285802}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &1890285808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890285802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1893603694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4326153635846769579, guid: c1408be7fe02f504abb8a5967f3f341f, type: 3}
@@ -28310,6 +28401,7 @@ GameObject:
   - component: {fileID: 2114950329}
   - component: {fileID: 2114950328}
   - component: {fileID: 2114950327}
+  - component: {fileID: 2114950330}
   m_Layer: 6
   m_Name: Chafador_OK (11)
   m_TagString: Untagged
@@ -28396,6 +28488,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114950324}
   m_Mesh: {fileID: 7898984431171079271, guid: e5bcfe4cbe1f5ee4a80e9b15eb0b0d30, type: 3}
+--- !u!114 &2114950330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114950324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9fd5fa40e5f054cb7ef2667e6a8a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2117708132
 GameObject:
   m_ObjectHideFlags: 0
@@ -32338,15 +32442,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328889260342302762, guid: ed1704cc3f076f847be17569ce1e013d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 239
+      value: 213
       objectReference: {fileID: 0}
     - target: {fileID: 3328889260342302762, guid: ed1704cc3f076f847be17569ce1e013d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.74
+      value: -10.049726
       objectReference: {fileID: 0}
     - target: {fileID: 3328889260342302762, guid: ed1704cc3f076f847be17569ce1e013d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.259937
+      value: -21.259937
       objectReference: {fileID: 0}
     - target: {fileID: 3328889260342302762, guid: ed1704cc3f076f847be17569ce1e013d, type: 3}
       propertyPath: m_LocalRotation.w
