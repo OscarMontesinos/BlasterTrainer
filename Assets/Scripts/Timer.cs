@@ -11,11 +11,14 @@ public class Timer : MonoBehaviour
     private void Update()
     {
         seconds += Time.deltaTime;
-        if(seconds >= 60)
+        if (seconds >= 60)
         {
             seconds -= 60;
             minutes += 1;
         }
-        contador.text = minutes + " : " + seconds.ToString("F0");
+        if (contador != null)
+        {
+            contador.text = minutes + " : " + seconds.ToString("F0");
+        }
     }
 }

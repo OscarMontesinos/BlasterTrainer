@@ -1178,6 +1178,7 @@ GameObject:
   - component: {fileID: 871906784817887295}
   - component: {fileID: 6213908371284655576}
   - component: {fileID: 7106119798471975807}
+  - component: {fileID: 7782682291962255164}
   m_Layer: 0
   m_Name: PlayerIdle_anim
   m_TagString: Player
@@ -1271,7 +1272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 871906784817887295}
   cam: {fileID: 0}
-  camHandler: {fileID: 0}
   speed: 269
   speedTurn: 500
   speedTurnMultiplier: 45
@@ -1287,19 +1287,117 @@ MonoBehaviour:
     m_Bits: 0
   jumpable: 1
   shootingAble: 1
+  menu: {fileID: 0}
+  explosionAudio: {fileID: 1601180210887857844, guid: 4000000ebe828ad448507a453e6abea5, type: 3}
   canon1: {fileID: 6077561326737753588}
   canon2: {fileID: 2664714602881706082}
   bullet: {fileID: 6776607146321653992, guid: 89e1d1c1286b0b345987b24c398c93a3, type: 3}
-  gancho: {fileID: 0}
+  gancho: {fileID: 3087414900948661780}
   checkpoint: {fileID: 0}
   explosion: {fileID: 5349010451616036998, guid: 3570841ffc47d1149b362885321b7f52, type: 3}
   camGo: {fileID: 0}
   apuntable:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 200
   animatorR: {fileID: 2964732551753026977}
   animatorL: {fileID: 3371861809660133690}
   animatorWheel: {fileID: 0}
+--- !u!82 &7782682291962255164
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700268108439913104}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 470e02199a7f0d14dae3cdf5c4a07b86, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.592
+  m_Pitch: 2.89
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2700928403466808628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1772,7 @@ GameObject:
   - component: {fileID: 4395056634926456834}
   - component: {fileID: 6354460187772625237}
   - component: {fileID: 6393106740976588880}
+  - component: {fileID: 1749413472}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1789,13 +1888,109 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enganchado: 0
-  speed: 150
+  speed: 115
   range: 1000
   point: {fileID: 1676893911088302132}
   robot: {fileID: 2700268108439913104}
   ganchoLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 200
+--- !u!82 &1749413472
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3087414900948661780}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5166e4ff28972044e8085f372da5d0dc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.234
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3161969561220674137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3404,6 +3599,42 @@ PrefabInstance:
     - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
       value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.27843136
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.29509005
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0.7294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.7501426
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.b
+      value: 0.27843136
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.g
+      value: 0.30247718
+      objectReference: {fileID: 0}
+    - target: {fileID: 773476251747661432, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.r
+      value: 0.8862745
       objectReference: {fileID: 0}
     - target: {fileID: 773476251747661433, guid: 825944b1fa15fec4e81e4e42fcef7b77, type: 3}
       propertyPath: m_RootOrder
