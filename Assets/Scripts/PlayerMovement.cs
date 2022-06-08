@@ -93,12 +93,14 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!paused)
             {
+                Cursor.lockState = CursorLockMode.None;
                 Time.timeScale = 0;
                 menu.SetActive(true);
                 paused = !paused;
             }
             else
             {
+                Cursor.lockState = CursorLockMode.Locked;
                 Time.timeScale = 1;
                 menu.SetActive(false);
                 paused = !paused;
