@@ -79,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && jumpable)
         {
             jumpable = false;
+            animatorWheel.SetTrigger("Salto");
             _rigidbody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
         }
         if (Input.GetMouseButton(0) && shootTimer <= 0 && !gancho.GetComponent<Gancho>().enganchado)
@@ -104,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S) && !FindObjectOfType<Gancho>().enganchado)
         {
+            animatorWheel.SetBool("Gninnur", true);
             if (jumpable)
             {
                 _rigidbody.AddForce(transform.forward * -speed / 2, ForceMode.Force);
@@ -112,6 +114,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 _rigidbody.AddForce(transform.forward * -speed / 5, ForceMode.Force);
             }
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+
+            animatorWheel.SetBool("Gninnur", false);
         }
 
 
