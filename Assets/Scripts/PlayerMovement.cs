@@ -149,7 +149,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void Die()
-    {   
+    {
+        FindObjectOfType<Timer>().seconds += 10;
         Instantiate(explosion, transform.position, transform.rotation);
         _rigidbody.velocity = new Vector3(0, 0, 0);
         transform.position = checkpoint.transform.position;
