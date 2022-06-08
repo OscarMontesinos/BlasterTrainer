@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody _rigidbody;
     public Camera cam;
-    public CameraPlayer camHandler;
     Vector3 movement;
     float horizontalInput = 0;
     float verticalInput = 0;
@@ -45,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         animatorWheel = GetComponent<Animator>();
-        camHandler = FindObjectOfType<CameraPlayer>();
         mass = _rigidbody.mass;
         Cursor.lockState = CursorLockMode.Locked;
         speedB = speedTurn;
