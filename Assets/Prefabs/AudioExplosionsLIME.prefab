@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7182202753109669747}
   - component: {fileID: 667239961857088031}
   m_Layer: 0
-  m_Name: AudioExplosion
+  m_Name: AudioExplosionsLIME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,18 +42,18 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c277b9ec5511e9b4fad348e7e60781df, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f32b56a37ee0e2a46b6e06fdef7ee5c0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.332
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 71.46
+  MaxDistance: 197.87
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

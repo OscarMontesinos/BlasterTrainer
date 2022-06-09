@@ -8,6 +8,6 @@ public class Record : MonoBehaviour
     public Text recordT;
     private void Update()
     {
-        recordT.text = "Record " + PlayerPrefs.GetFloat("Minutes") + " : " + PlayerPrefs.GetFloat("Minutes").ToString("P0");
+        recordT.text = "Record " + PlayerPrefs.GetFloat("Minutes") + " : " + PlayerPrefs.GetFloat("Seconds").ToString("P0");
     }
 }

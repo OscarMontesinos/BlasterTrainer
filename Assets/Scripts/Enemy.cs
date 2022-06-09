@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     float y;
     public float speed;
     GameObject player;
+    public GameObject audioExplosion;
     public float viraje;
     public bool mirar;
     Quaternion targetRotation;
@@ -54,6 +55,7 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
+        Instantiate(audioExplosion, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }

@@ -18,11 +18,11 @@ public class End : MonoBehaviour
             {
                 Safe();
             }
-            else if (PlayerPrefs.GetFloat("Minutes") <  timer.minutes)
+            else if (PlayerPrefs.GetFloat("Minutes") >  timer.minutes)
             {
                 Safe();
             }
-            else if (PlayerPrefs.GetFloat("Minutes") == timer.minutes && PlayerPrefs.GetFloat("Seconds") < timer.seconds)
+            else if (PlayerPrefs.GetFloat("Minutes") == timer.minutes && PlayerPrefs.GetFloat("Seconds") > timer.seconds)
             {
                 Safe();
             }
