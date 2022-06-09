@@ -221,4 +221,8 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody.AddForce(transform.up * jumpSpeed, ForceMode.Impulse);
     }
 
+    public void timescale()
+    {
+        Time.timeScale = 1;
+    }
 }
