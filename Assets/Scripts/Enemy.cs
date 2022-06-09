@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         
     }
-
+    W
     // Update is called once per frame
     void Update()
     {
