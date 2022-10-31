@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    bool god;
     public Rigidbody _rigidbody;
     public Camera cam;
     Vector3 movement;
@@ -62,6 +63,10 @@ public class PlayerMovement : MonoBehaviour
 }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            god = !god;
+        }
         if (Input.GetKeyDown(KeyCode.R))
         {
             Die();
@@ -170,18 +175,23 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
-        Instantiate(explosionAudio, transform.position, transform.rotation);
-        transform.parent = null;
-        FindObjectOfType<Timer>().seconds += 10;
-        Instantiate(explosion, transform.position, transform.rotation);
-        _rigidbody.velocity = new Vector3(0, 0, 0);
-       
-        checkpoint.GetComponent<CheckPoint>().StartCoroutine(checkpoint.GetComponent<CheckPoint>().Respawn());
-        gameObject.SetActive(false);
-        var trackers = FindObjectsOfType<Tracker>();
-        foreach(Tracker tracker in trackers)
+        if (god)
         {
-            tracker.GetComponent<LineRenderer>().enabled = false;
+
+
+            Instantiate(explosionAudio, transform.position, transform.rotation);
+            transform.parent = null;
+            FindObjectOfType<Timer>().seconds += 10;
+            Instantiate(explosion, transform.position, transform.rotation);
+            _rigidbody.velocity = new Vector3(0, 0, 0);
+
+            checkpoint.GetComponent<CheckPoint>().StartCoroutine(checkpoint.GetComponent<CheckPoint>().Respawn());
+            gameObject.SetActive(false);
+            var trackers = FindObjectsOfType<Tracker>();
+            foreach (Tracker tracker in trackers)
+            {
+                tracker.GetComponent<LineRenderer>().enabled = false;
+            }
         }
     }
     void Shoot()
